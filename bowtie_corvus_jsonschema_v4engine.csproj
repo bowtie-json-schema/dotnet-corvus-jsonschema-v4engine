@@ -6,6 +6,9 @@
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
     <PreserveCompilationContext>true</PreserveCompilationContext>
+    <!-- ReadyToRun: the harness, Roslyn and the code generator are precompiled at image build, so a fresh
+         process (Bowtie starts one per benchmark measurement) does not pay their JIT cost on its first case. -->
+    <PublishReadyToRun>true</PublishReadyToRun>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -18,6 +21,6 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Corvus.Json.Validator" Version="5.5.5" />
+    <PackageReference Include="Corvus.Json.Validator" Version="5.6.0" />
   </ItemGroup>
 </Project>
