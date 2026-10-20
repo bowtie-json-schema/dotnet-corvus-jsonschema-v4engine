@@ -21,6 +21,6 @@
 
 
   <ItemGroup>
-    <PackageReference Include="Corvus.Json.Validator" Version="5.7.7" />
+    <PackageReference Include="Corvus.Json.Validator" Version="5.7.8" />
   </ItemGroup>
 </Project>
